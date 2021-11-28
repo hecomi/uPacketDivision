@@ -131,7 +131,7 @@ void CheckEvent()
 
 If you want to get a pointer and its size instead of an array, the following APIs are available.
 
-```
+```cs
 var index = assembler.GetAssembledFrameIndex();
 var data = assembler.GetFrameData(index);
 var size = assembler.GetFrameSize(index);
