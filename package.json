@@ -1,0 +1,32 @@
+{
+    "name": "com.hecomi.upacketdivision",
+    "version": "1.0.0",
+    "displayName": "uPacketDivision",
+    "description": "A native plugin for Unity that provides simple packet division and restoration.",
+    "author": {
+        "name": "hecomi",
+        "url": "https://tips.hecomi.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hecomi/uPacketDivision"
+    },
+    "keywords": [
+        "unity",
+        "native-plugin",
+        "udp"
+    ],
+    "license": "MIT License",
+    "samples": [
+        {
+            "displayName": "01. Basic",
+            "description": "A basic example of data division and restoration.",
+            "path": "Samples~/01. Basic"
+        },
+        {
+            "displayName": "02. uOSC + Network",
+            "description": "An example of sending a texture buffer and restoring it using uOSC.",
+            "path": "Samples~/02. uOSC + Network"
+        }
+    ]
+}
