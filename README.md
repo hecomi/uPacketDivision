@@ -26,7 +26,7 @@ How to use
 
 ### Divide
 
-Create a `Divider` and call `Divide()` with the array as input (or `System.IntPtr` with the size). This will divide the packet internally.
+Create a `Divider` and call `Divide<T>(T[])` with the array as input (or `Divide(System.IntPtr, int size)`). This will divide the packet internally.
 
 ```cs
 Divider divider = new Divider();
