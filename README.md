@@ -103,7 +103,7 @@ void OnData(byte[] data)
 }
 ```
 
-Each time you add data, check for data recovery or loss as follows.
+Each time you add data, check for the completion or loss as follows.
 
 ```cs
 void CheckEvent()
@@ -112,7 +112,7 @@ void CheckEvent()
     {
         case EventType.FrameCompleted:
         {
-            OnDataAssembled(_assembler.GetAssembledData<Color32>());
+            OnDataAssembled(assembler.GetAssembledData<Color32>());
             break;
         }
         case EventType.PacketLoss:
@@ -146,6 +146,6 @@ void OnDataAssembled(Color32[] pixels)
 {
     texture.SetPixels32(pixels);
     texture.Apply();
-    GetComponent<Renderer>().material.mainTexture = _texture;
+    GetComponent<Renderer>().material.mainTexture = texture;
 }
 ```
